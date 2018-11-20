@@ -1,5 +1,6 @@
 # PackageMessage
 A tcp data packaging solution that supports the handling of sticky packets
+
 这是一个TCP数据打包方案，适用于长连接中遇到的粘包和半包问题。
 
 Github地址：https://github.com/itgowo/PackageMessage
@@ -19,19 +20,19 @@ https://github.com/itgowo下面的PackageMessage、ByteBuffer、RemoteDataContro
 ###### 一：解包
 ```
         ByteBuffer buffer = ByteBuffer.newByteBuffer();
-       if (msg instanceof byte[]) {
-            buffer.writeBytes((byte[]) msg);
+        if (msg instanceof byte[]) {
+                buffer.writeBytes((byte[]) msg);
         }
         List<PackageMessage> packageMessageList = packageMessage.packageMessage(buffer);
 ```
 
 ##### 二：打包
 ```
-    ByteBuffer buffer = ByteBuffer.newByteBuffer();
-    buffer.writeBytes((byte[]) msg);
-    PackageMessage packageMessage=PackageMessage.getPackageMessage()
-           .setDataType(PackageMessage.DATA_TYPE_BYTE).setData(data);
-     byte[] request = msg.encodePackageMessage().readableBytesArray();
+        ByteBuffer buffer = ByteBuffer.newByteBuffer();
+        buffer.writeBytes((byte[]) msg);
+        PackageMessage packageMessage=PackageMessage.getPackageMessage()
+                   .setDataType(PackageMessage.DATA_TYPE_BYTE).setData(data);
+        byte[] request = msg.encodePackageMessage().readableBytesArray();
 ```
 ### 原理解析
 ![这是一个理想状态](https://upload-images.jianshu.io/upload_images/3213604-e4c8ee3dc2c7fe8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
