@@ -7,22 +7,16 @@ Github地址：https://github.com/itgowo/PackageMessage
 至于Java Nio实现长连接方案，稍后会发，浏览我的文章就可以找到。
 
 以下项目都是我围绕远程控制写的子项目。都给star一遍吧。😍
-
-[PackageMessage](https://github.com/itgowo/PackageMessage)
-
-[ByteBuffer](https://github.com/itgowo/ByteBuffer)
-
-[RemoteDataControllerForAndroid](https://github.com/itgowo/RemoteDataController/RemoteDataControllerForAndroid)
-
-[RemoteDataControllerForWeb](https://github.com/itgowo/RemoteDataControllerForWeb)
-
-[RemoteDataControllerServer](https://github.com/itgowo/RemoteDataControllerServer)
-
-[MiniHttpClient](https://github.com/itgowo/MiniHttpClient)
-
-[MiniHttpServer](https://github.com/itgowo/MiniHttpServer)
-
-[DataTables.AltEditor](https://github.com/itgowo/DataTables.AltEditor)
+|项目名称|语言|设备|项目说明|
+|---|---|---|---|
+|[PackageMessage](https://github.com/itgowo/PackageMessage)|Java|运行Java的设备|TCP粘包与半包解决方案|
+|[ByteBuffer](https://github.com/itgowo/ByteBuffer)|Java|运行Java的设备|二进制处理工具类|
+|[RemoteDataControllerForAndroid](https://github.com/itgowo/RemoteDataController/RemoteDataControllerForAndroid)|Java|Android设备|远程数据调试Android端|
+|[RemoteDataControllerForWeb](https://github.com/itgowo/RemoteDataControllerForWeb)|JavaScript|浏览器|远程数据调试控制台Web端|
+|[RemoteDataControllerServer](https://github.com/itgowo/RemoteDataControllerServer)|Java|运行Java的设备|远程数据调试Server端|
+|[MiniHttpClient](https://github.com/itgowo/MiniHttpClient)|Java|运行Java的设备|精简的HttpClient|
+|[MiniHttpServer](https://github.com/itgowo/MiniHttpServer)|Java|运行Java的设备|支持部分Http协议的Server|
+|[DataTables.AltEditor](https://github.com/itgowo/DataTables.AltEditor)|JavaScript|浏览器|Web端表格编辑组件|
 
 [我的小站：IT狗窝](http://itgowo.com)
 
