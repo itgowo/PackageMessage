@@ -1,16 +1,22 @@
 # PackageMessage
-A tcp data packaging solution that supports the handling of sticky packets
-
-这是一个TCP数据打包方案，适用于长连接中遇到的粘包和半包问题。
+##### A tcp data packaging solution that supports the handling of sticky packets
+##### 这是一个TCP数据打包方案，适用于长连接中遇到的粘包和半包问题。
 
 Github地址：https://github.com/itgowo/PackageMessage
-[另一个组合型框架方案，包含websocket、socket、PackageMessage和http等支持及拓展的ActionFramework](https://github.com/itgowo/ActionFramework)
 
 至于Java Nio实现长连接方案，稍后会发，浏览我的文章就可以找到。
 
-https://github.com/itgowo下面的PackageMessage、ByteBuffer、RemoteDataControllerForAndroid、RemoteDataControllerForWeb、RemoteDataControllerServer、SqlParserForJava、MiniHttpClient和MiniHttpServer，包括js项目DataTables.AltEditor，都是我围绕远程控制用到写的子项目。都给star一遍吧。😍
+以下项目都是我围绕远程控制写的子项目。都给star一遍吧。😍
+[PackageMessage](https://github.com/itgowo/PackageMessage)
+[ByteBuffer](https://github.com/itgowo/ByteBuffer)
+[RemoteDataControllerForAndroid](https://github.com/itgowo/RemoteDataController/RemoteDataControllerForAndroid)
+[RemoteDataControllerForWeb](https://github.com/itgowo/RemoteDataControllerForWeb)
+[RemoteDataControllerServer](https://github.com/itgowo/RemoteDataControllerServer)
+[MiniHttpClient](https://github.com/itgowo/MiniHttpClient)
+[MiniHttpServer](https://github.com/itgowo/MiniHttpServer)
+[DataTables.AltEditor](https://github.com/itgowo/DataTables.AltEditor)
 
-[IT狗窝](http://itgowo.com)
+[我的小站：IT狗窝](http://itgowo.com)
 
 ### 半包
 指接受方没有接受到一个完整的包，只接受了部分，这种情况主要是由于TCP为提高传输效率，将一个包分配的足够大，导致接受方并不能一次接受完。（在长连接和短连接中都会出现）。 
@@ -20,19 +26,19 @@ https://github.com/itgowo下面的PackageMessage、ByteBuffer、RemoteDataContro
 ###### 一：解包
 ```
         ByteBuffer buffer = ByteBuffer.newByteBuffer();
-        if (msg instanceof byte[]) {
-                buffer.writeBytes((byte[]) msg);
+       if (msg instanceof byte[]) {
+            buffer.writeBytes((byte[]) msg);
         }
         List<PackageMessage> packageMessageList = packageMessage.packageMessage(buffer);
 ```
 
 ##### 二：打包
 ```
-        ByteBuffer buffer = ByteBuffer.newByteBuffer();
-        buffer.writeBytes((byte[]) msg);
-        PackageMessage packageMessage=PackageMessage.getPackageMessage()
-                   .setDataType(PackageMessage.DATA_TYPE_BYTE).setData(data);
-        byte[] request = msg.encodePackageMessage().readableBytesArray();
+    ByteBuffer buffer = ByteBuffer.newByteBuffer();
+    buffer.writeBytes((byte[]) msg);
+    PackageMessage packageMessage=PackageMessage.getPackageMessage()
+           .setDataType(PackageMessage.DATA_TYPE_BYTE).setData(data);
+     byte[] request = msg.encodePackageMessage().readableBytesArray();
 ```
 ### 原理解析
 ![这是一个理想状态](https://upload-images.jianshu.io/upload_images/3213604-e4c8ee3dc2c7fe8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
