@@ -6,6 +6,7 @@ Github地址：https://github.com/itgowo/PackageMessage
 
 ### 数据包格式
 包最小为6字节
+
 |名称|长度|类型|是否必须|取值范围|说明|
 |---|---|---|---|---|---|
 |type|1|Byte|是|-127 ~ 128|消息类型 |
@@ -16,6 +17,7 @@ Github地址：https://github.com/itgowo/PackageMessage
 
 ### type定义
 用来标识数据包类型，分为动态长度和固定长度。
+
 |常量名|名称|值|说明|
 |---|---|---|---|
 |TYPE_DYNAMIC_LENGTH|动态长度|121|与length值相关，适合传输不固定数据大小情况，尤其是时大时小波动范围大的情况|
@@ -25,7 +27,8 @@ Github地址：https://github.com/itgowo/PackageMessage
 用来标识数据包大小，在动态数据包解析中决定了二进制数据切割位置。数值为包大小，包含全部数据。
 
 ### dataType定义
-用来标识data的数据类型，0-10 是预定义或保留值，
+用来标识data的数据类型，0-10 是预定义或保留值。
+
 |常量名|名称|值|说明|
 |---|---|---|---|
 |DATA_TYPE_COMMAND|指令|1|控制级别的数据传输|
@@ -45,6 +48,7 @@ Github地址：https://github.com/itgowo/PackageMessage
 
 ### step定义
 用来标识包解析状态的，在业务处理中大部分已经废弃，用来开发调试分析这个过程很有用，可以知道到哪里解析出错了。
+
 |常量名|值|说明|
 |---|---|---|
 |STEP_DEFAULT|0|new 出来默认值|
