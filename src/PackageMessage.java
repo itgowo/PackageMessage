@@ -74,7 +74,7 @@ public class PackageMessage {
     /**
      * 下次处理的半包数据
      */
-    private static ByteBuffer nextData = ByteBuffer.newByteBuffer();
+    private ByteBuffer nextData = ByteBuffer.newByteBuffer();
     /**
      * type 1 byte 消息类型  系统协议  范围-127 ~ 128
      */
