@@ -20,6 +20,7 @@ Github地址：https://github.com/itgowo/PackageMessage
 |[DataTables.AltEditor](https://github.com/itgowo/DataTables.AltEditor)|JavaScript|浏览器|Web端表格编辑组件|
 
 [我的小站：IT狗窝](http://itgowo.com)
+技术联系QQ:1264957104
 
 ### 半包
 指接受方没有接受到一个完整的包，只接受了部分，这种情况主要是由于TCP为提高传输效率，将一个包分配的足够大，导致接受方并不能一次接受完。（在长连接和短连接中都会出现）。 
