@@ -124,16 +124,16 @@ dataType指明该数据包数据类型，如果为心跳，那么length=6，没�
 ### 六：小期待
 以下项目都是我围绕远程控制写的子项目。都给star一遍吧。😍
 
-|项目名称|语言|设备|项目说明|
-|---|---|---|---|
-|[PackageMessage](https://github.com/itgowo/PackageMessage)|Java|运行Java的设备|TCP粘包与半包解决方案|
-|[ByteBuffer](https://github.com/itgowo/ByteBuffer)|Java|运行Java的设备|二进制处理工具类|
-|[RemoteDataControllerForAndroid](https://github.com/itgowo/RemoteDataControllerForAndroid)|Java|Android设备|远程数据调试Android端|
-|[RemoteDataControllerForWeb](https://github.com/itgowo/RemoteDataControllerForWeb)|JavaScript|浏览器|远程数据调试控制台Web端|
-|[RemoteDataControllerServer](https://github.com/itgowo/RemoteDataControllerServer)|Java|运行Java的设备|远程数据调试Server端|
-|[MiniHttpClient](https://github.com/itgowo/MiniHttpClient)|Java|运行Java的设备|精简的HttpClient|
-|[MiniHttpServer](https://github.com/itgowo/MiniHttpServer)|Java|运行Java的设备|支持部分Http协议的Server|
-|[DataTables.AltEditor](https://github.com/itgowo/DataTables.AltEditor)|JavaScript|浏览器|Web端表格编辑组件|
+|项目(Github)|语言|其他地址|运行环境|项目说明|
+|---|---|---|---|---|
+|[PackageMessage](https://github.com/itgowo/PackageMessage)|Java|[简书](https://www.jianshu.com/p/8a4a0ba2f54a)|运行Java的设备|TCP粘包与半包解决方案|
+|[ByteBuffer](https://github.com/itgowo/ByteBuffer)|Java|[简书](https://www.jianshu.com/p/ba68224f30e4)|运行Java的设备|二进制处理工具类|
+|[RemoteDataControllerForAndroid](https://github.com/itgowo/RemoteDataControllerForAndroid)|Java|[简书](https://www.jianshu.com/p/eb692f5709e3)|Android设备|远程数据调试Android端|
+|[RemoteDataControllerForWeb](https://github.com/itgowo/RemoteDataControllerForWeb)|JavaScript|[简书](https://www.jianshu.com/p/75747ff4667f)|浏览器|远程数据调试控制台Web端|
+|[RemoteDataControllerForServer](https://github.com/itgowo/RemoteDataControllerForServer)|Java|[简书](https://www.jianshu.com/p/3858c7e26a98)|运行Java的设备|远程数据调试Server端|
+|[MiniHttpClient](https://github.com/itgowo/MiniHttpClient)|Java|[简书](https://www.jianshu.com/p/41b0917271d3)|运行Java的设备|精简的HttpClient|
+|[MiniHttpServer](https://github.com/itgowo/MiniHttpServer)|Java|[简书](https://www.jianshu.com/p/de98fa07140d)|运行Java的设备|支持部分Http协议的Server|
+|[DataTables.AltEditor](https://github.com/itgowo/DataTables.AltEditor)|JavaScript|[简书](https://www.jianshu.com/p/a28d5a4c333b)|浏览器|Web端表格编辑组件|
 
 [我的小站：IT狗窝](http://itgowo.com)
 技术联系QQ:1264957104
