@@ -186,7 +186,8 @@ public class PackageMessage {
         if (length == 6) {
             ByteBuffer byteBuffer = ByteBuffer.newByteBuffer();
             byteBuffer.writeByte((byte) type)
-                    .writeInt(length);
+                    .writeInt(length)
+                    .writeByte((byte) dataType);
             return byteBuffer;
         }
         if (dataType == 0) {
