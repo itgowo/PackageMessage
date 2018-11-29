@@ -20,7 +20,10 @@
 
 分包是指在出现粘包的时候我们的接收方要进行分包处理。（在长连接中都会出现）
 
-### 二：简单使用(Java Nio版与普通版使用方法一样)
+### 二：引入
+目前将ByteBuffer和PackageMessage都放到了[MiniTCPClient](https://www.jianshu.com/p/4b993100eae5)项目里。
+
+### 三：简单使用(Java Nio版与普通版使用方法一样)
 ###### 解包
 ```
         ByteBuffer buffer = ByteBuffer.newByteBuffer();
@@ -39,7 +42,7 @@
      byte[] request = msg.encodePackageMessage().readableBytesArray();
 ```
 
-### 三：数据包格式
+### 四：数据包格式
 提示：包最小为6字节
 
 |名称|长度|类型|是否必须|取值范围|说明|
@@ -95,7 +98,7 @@
 |STEP_DATA_PART|6|读取data数据部分|
 |STEP_DATA_INVALID|7|无效包|
 
-### 四：原理解析
+### 五：原理解析
 ![这是一个理想状态](https://upload-images.jianshu.io/upload_images/3213604-e4c8ee3dc2c7fe8f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 1.如上图，理想状态下数据发送和接收是一样的。
@@ -113,7 +116,7 @@
 4.如上图，当同时发生半包和粘包时与单独遇到问题一样，解析成功的PackageMessage返回List，剩余的当做半包处理。
 
 
-### 五：疑难解答
+### 六：疑难解答
 
 #### 1.为什么第一个字节是type？
 因为动态长度和定长解析不一样。
@@ -135,7 +138,7 @@ PackageMessage标准版是使用我自己写的二进制处理工具ByteBuffer�
 
 
  
-### 六：小期待
+### 七：小期待
 
 以下项目都是我围绕远程控制写的项目和子项目。都给star一遍吧。😍
 
